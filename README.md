@@ -29,7 +29,7 @@
     $ cd test
     $ bower install
 
-  Install GULP and SASS
+###  Install GULP and SASS
    
    $ npm install -g gulp 
    $ npm install --save-dev gulp
