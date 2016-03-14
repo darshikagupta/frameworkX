@@ -9,6 +9,13 @@
   Clone the repository in your shell
 
     $ git clone https://github.com/darshikagupta/frameworkX.git
+    
+    
+### Global Dependencies
+
+    $ gem install sass 
+    $ npm install -g bower 
+    $ npm install -g gulp
 
 ### Quick Start
 
@@ -22,11 +29,3 @@ http://bower.io/#a-note-for-windows-users)
 
     $ bower install
     
-
-### Global Dependencies
-
-    $ gem install sass 
-    $ npm install -g bower 
-    $ npm install -g gulp
-
-  
