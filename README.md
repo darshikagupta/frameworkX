@@ -1,5 +1,4 @@
-# frameworkX
-A new UI framework 
+
 
 ## FRAMEWORK X
 
