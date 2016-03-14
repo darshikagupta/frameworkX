@@ -12,7 +12,9 @@
 
 ## Local Installation
 
-  Clone the repository in your shell:
+  Clone the repository in your shell
+
+    $ git clone https://github.com/darshikagupta/frameworkX.git
 
 ### Quick Start
 
