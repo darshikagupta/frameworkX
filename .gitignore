@@ -1,2 +1,4 @@
 .sass-cache/
-*.css.map
+scripts/vendor/*
+node_modules
+build
