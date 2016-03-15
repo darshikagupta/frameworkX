@@ -1,0 +1,8 @@
+{
+  "name": "Framework X",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "jquery": "1.7"
+  }
+}
