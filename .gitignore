@@ -1,4 +1,4 @@
 .sass-cache/
-scripts/vendor/*
+
 node_modules
 build
