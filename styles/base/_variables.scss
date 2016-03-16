@@ -1,0 +1,71 @@
+//FrameworkX default settings;
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+//
+//## brand colors for use across FrameworkX.
+
+$gray-base:             #000 !default;
+$gray-darker:           lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:             lighten($gray-base, 20%)   !default;   // #333
+$gray:                  lighten($gray-base, 33.5%) !default; // #555
+$gray-light:            lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter:          lighten($gray-base, 93.5%) !default; // #eee
+
+$brand-primary:         #1f1c95 !default; // Royal Blue
+$brand-secondary:       #fe8f37 !default; // Orange
+$brand-functional:      #427cbb !default; // Blue
+$brand-success:         #16a916 !default; // Green
+$brand-info:            #26a0c4 !default; //  Light Blue
+$brand-warning:         #e19323 !default; // Yellow
+$brand-danger:          #ba2723 !default; // Red
+
+
+
+
+//global base
+
+//Settings some of the most global styles.
+
+//** Background color for `<body>`.
+$body-bg:               #f2f2f2 !default;
+//** Global text color on `<body>`.
+$text-color:            $gray-dark !default;
+
+//** Global textual link color.
+$link-color:            $brand-primary !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      lighten($link-color, 15%) !default;
+//** Link hover decoration.
+$link-hover-decoration: underline !default;
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+
+$font-size-base:          1.143rem !default; // ~16px
+$font-size-large:         ceil(($font-size-base * 1.286rem)) !default; // ~18px
+$font-size-small:         ceil(($font-size-base * 0.8571rem)) !default; // ~12px
+
+$font-size-h1:            floor(($font-size-base * 2.571rem)) !default; // ~36px
+$font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.428571429 !default; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~22px
+
+//** By default, this inherits from the `<body>`.
+$headings-font-family:    inherit !default;
+$headings-font-weight:    500 !default;
+$headings-line-height:    1.1 !default;
+$headings-color:          inherit !default;
