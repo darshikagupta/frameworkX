@@ -1,4 +1,152 @@
-//FrameworkX default settings;
-//
 // base 
 // --------------------------------------------------
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0 !important;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-color;
+  background-color: $body-bg;
+  font-family:$font-family-base;
+}
+
+// Links
+	a {
+		color: $brand-primary;
+		text-decoration: none;
+		outline: none;
+		&:hover {
+			text-decoration: underline;
+		}
+		&.no-decoration:hover {
+		  text-decoration: none;
+		}
+		.hover-underline:hover {
+		  text-decoration: underline;
+		}
+	}
+	.link {
+		font-size: rem(16);
+		cursor: pointer;
+		color: $brand-primary;
+		&.no-link{
+			color:$gray-dark;
+			&:hover{
+				text-decoration:none;
+				cursor:default;
+			}
+		}
+	}
+	.linkIcon{
+		i{
+			@extend .link;
+			font-weight:normal;
+			cursor:auto;
+			&.cursor-pointer{
+				&:hover{
+					cursor:pointer;
+					text-decoration:none;
+				}
+			}
+			&.column-icon{
+				font-size:rem(15);
+			}
+		}
+	}
+
+// List
+	ul {
+	  list-style: none;
+	  padding: 0;
+	  margin: 0;
+	}
+
+
+// Heading
+
+h1 {
+	font-size: $font-size-h1;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: $font-size-h2;
+	&.table-title-font-size{
+		font-size: rem(18);
+	}
+}
+
+h3 {
+	font-size: $font-size-h3;	
+}
+
+h4 {
+	font-size: $font-size-h4;
+}
+
+h5 {
+	font-size: $font-size-h5;
+}
+
+h6 {
+	font-size: $font-size-h6;
+}
+
+
+h1, h2, h3, h4, h5 {
+	margin: 0;
+	padding: 0;
+}
+
+// Paragraph
+
+p {
+	font-size: $font-size-base;
+	line-height: 1.7;
+	
+}
+
+// Secondary Text
+
+.secondary-text {
+	font-size: $font-size-small;
+}
+
+// Images
+img {
+  max-width: 100%;
+}
+.jumbo h1 {
+	font-size:$font-size-jumbo;
+	color: $brand-functional;
+	
+
+}
+.container {
+	 max-width:$width-base;
+	 margin:0 auto;
+	 
+}
