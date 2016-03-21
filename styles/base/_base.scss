@@ -27,7 +27,6 @@ time, mark, audio, video {
 
 body {
   font-size: $font-size-base;
-  line-height: $line-height-base;
   color: $text-color;
   background-color: $body-bg;
   font-family:$font-family-base;
@@ -146,7 +145,7 @@ img {
 
 }
 .container {
-	 max-width:$width-base;
+	 max-width:$width-base-fixed;
 	 margin:0 auto;
 	 
 }
