@@ -135,17 +135,38 @@ p {
 }
 
 // Images
+     
 img {
-  max-width: 100%;
-}
+    width: auto;
+    max-width: 100%;
+    height: auto !important; 
+    }   
+ 
 .jumbo h1 {
 	font-size:$font-size-jumbo;
 	color: $brand-functional;
+	text-align:center;
 	
 
 }
 .container {
 	 max-width:$width-base-fixed;
 	 margin:0 auto;
+	 background-color:$brand-white;
+	 padding:2%;
+	 box-sizing: border-box;
+	 overflow:hidden;
+	 	 
+	 
+}
+
+.container-full {
+	 max-width:100%;
+	 margin:0 auto;
+	 background-color:$brand-white;
+	 padding:0;
+	 margin:0;
+	 box-sizing: border-box;
+	 overflow:hidden;	 
 	 
 }

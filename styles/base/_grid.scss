@@ -3,6 +3,62 @@
   font-size: ($size / 16) + rem;
 }
 
+@for $i from 1 through 12 {
+ 
+    .column-#{$i} { 
+        width: 100% / 12 * $i;
+    }
+ 
+}
+
+.column-1 {
+    width: 8.33333%;
+}
+ 
+.column-2 {
+    width: 16.66667%;
+}
+ 
+.column-3 {
+    width: 25%;
+}
+ 
+.column-4 {
+    width: 33.33333%;
+}
+ 
+.column-5 {
+    width: 41.66667%;
+}
+ 
+.column-6 {
+    width: 50%;
+}
+ 
+.column-7 {
+    width: 58.33333%;
+}
+ 
+.column-8 {
+    width: 66.66667%;
+}
+ 
+.column-9 {
+    width: 75%;
+}
+ 
+.column-10 {
+    width: 83.33333%;
+}
+ 
+.column-11 {
+    width: 91.66667%;
+}
+ 
+.column-12 {
+    width: 100%;
+}
+
 
 *,
 *:after,
@@ -21,16 +77,20 @@ img {
     }
 	
 .wrapper {
-    width: 100%;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapper:before, .wrapper:after {
+  content: '';
+  display: table;
+}
+.wrapper:after {
+  clear: both;
 }
 
-.wrapper:after,
-.row:after {
-      content: "";
-      display: table;
-      clear: both; 
-      }
+
 	  
 [class*='column-'] {
     float: left;
@@ -38,3 +98,39 @@ img {
     width: 100%;
     min-height: 1px; 
     }
+	
+/* Variables */
+$wrapper: 80rem;
+$gutter: 1rem;
+
+/* Row */
+@mixin row($inside: false) {
+  @if($inside == true) {
+    margin-left: -$gutter/2;
+    margin-right: -$gutter/2;
+  }
+  @else {
+    width: 100%;
+    max-width: $wrapper;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &:before, &:after {
+    content: '';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+/* Column */
+@mixin col($width: 1, $padding: true) {
+  float: left;
+  width: percentage($width);
+  @if($padding == true) {
+    padding-left: $gutter/2;
+    padding-right: $gutter/2;
+  }
+}
+
+
